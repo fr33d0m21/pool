@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Mapbox marker styles */
+.mapbox-marker {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transform-origin: bottom center;
+  transition: transform 0.2s;
+}
+
+.mapbox-marker:hover {
+  transform: scale(1.2);
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
